@@ -1,0 +1,121 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#navbar-nav .nav-item a{
+  color: #fff !important;
+  font-weight: 700;
+}
+#navbar-nav .nav-item ul {
+  background-color: #fff;
+}
+#navbar-nav .nav-item ul li a {
+  color: #333 !important;
+}
+#navbar-nav .nav-item ul li:hover a {
+  color: blue !important;
+}
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  position: absolute;
+  padding: 20px 80px;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  font-size: 2em;
+  /* overflow: hidden; */
+}
+header .logo {
+  position: absolute;
+  left: 80px;
+  z-index: 9;
+}
+header .logo img {
+  filter: invert(100%);
+}
+.menu-btn .bars {
+  color: #fff;
+}
+#navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+#navbar-nav .nav-item {
+  padding: 10px;
+  margin: 0 10px;
+  
+}
+
+#navbar-nav .nav-item a{
+  color: #fff;
+  font-weight: 700;
+}
+#navbar-nav .nav-item ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.603);
+  padding: 10px 20px;
+  transition: all .3s;
+}
+#navbar-nav .nav-item ul li a {
+  color: #333 !important;
+  font-weight: 700;
+}
+#navbar-nav .nav-item ul li:hover a {
+  color: blue !important;
+  transition: all .2s;
+}
+#navbar-nav .nav-item:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* 
+.section1 {
+  width: 1400px;
+  height: 2000px;
+  margin: 0 auto;
+  padding-top: 200px;
+  border: 1px solid black;
+  font-family: 'NanumSquare', sans-serif !important;
+} */
+.head-bg {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  background: url("../img/health_pillar_banner1_0.png");
+  background-position: center;
+  background-size: cover;
+}
+.section-head {
+
+}
+.section-body {
+  display: flex;
+}
+.section-side {
+}
+.section-content {
+  line-height: 1.2em;
+}
+
+/* footer */
+footer {
+  height: 200px;
+  padding: 30px 0;
+  background-color: #f0f0f0;
+  color: rgb(146, 146, 146);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(224, 224, 224);
+  box-sizing: border-box;
+}
+.block-globalfootercopyright {
+  display: flex;
+  gap: 20px
+}

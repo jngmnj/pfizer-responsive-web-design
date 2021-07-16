@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Fixed headers - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed header and footer." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" />
+	<!-- reset css  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+	<!-- font awesome -->
+	<script
+	src="https://kit.fontawesome.com/a3812f2195.js"
+	crossorigin="anonymous"
+></script>
+	<link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/responsive.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="./js/jquery.fullpage.extentions.min.js"></script>
+	<script src="./js/accordion.js"></script>
+	<script src="./js/responsiveNav.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="logo">
+			<a href=""><img src="./img/Logo_Knockout.png" alt="" /></a>
+		</div>
+		<div class="menu-btn">
+			<i class="fas fa-bars bars"></i>
+		</div>
+		<!-- menu -->
+		<div class="nav-container">
+			<div class="menu-btn">
+				<i class="fas fa-times close"></i>
+			</div>
+			<ul id="navbar-nav">
+				<li class="nav-item">
+					<a href="javascript:void(0)">Your Health</a>
+					<ul>
+						<li class="">
+							<a href="./healthyLiving.html">Healthy Living</a>
+						</li>
+						<li class=""><a href="">Brain & Nervous System</a></li>
+						<li class=""><a href="">Cardiovascular Health</a></li>
+						<li class=""><a href="">Cold & Flu</a></li>
+						<li class=""><a href="">Digestive Health</a></li>
+						<li class=""><a href="">Healthier Aging</a></li>
+						<li class=""><a href="">Living Tobacco Free</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="javascript:void(0)">Our Science</a>
+					<ul>
+						<li class=""><a href="">Healthy Living</a></li>
+						<li class=""><a href="">Brain & Nervous System</a></li>
+						<li class=""><a href="">Cardiovascular Health</a></li>
+						<li class=""><a href="">Cold & Flu</a></li>
+						<li class=""><a href="">Digestive Health</a></li>
+						<li class=""><a href="">Healthier Aging</a></li>
+						<li class=""><a href="">Living Tobacco Free</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="javascript:void(0)">Our Purpose</a>
+					<ul>
+						<li class=""><a href="">Healthy Living</a></li>
+						<li class=""><a href="">Brain & Nervous System</a></li>
+						<li class=""><a href="">Cardiovascular Health</a></li>
+						<li class=""><a href="">Cold & Flu</a></li>
+						<li class=""><a href="">Digestive Health</a></li>
+						<li class=""><a href="">Healthier Aging</a></li>
+						<li class=""><a href="">Living Tobacco Free</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="">Connect with Us</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+<div id="fullpage">
+
+	<div class="section" id="section0" onclick="location='./health/healthyLiving.html'">
+		<div class="hero">
+			<div class="heading">
+				<h1>VISIT OUR COVID-19 HUB</h1>
+				<p>Sharing resources to stay safe and updates on our efforts we hope could bring an end to the global health crisis.</p>
+			</div>
+			<video src="./img/Dna - 23134.mp4" autoplay muted loop poster="./img/20210714_112729.png"></video>
+		</div>
+	</div>
+
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
+				<div class="hero">
+					<div class="heading">
+						<h1>DOING BETTER: INCREASING DIVERSITY IN CLINICAL TRIALS</h1>
+						<p>
+							We’re working to do better. By analyzing our clinical trial data, we are exploring ways to improve representation and reduce health disparities amongst our participants.
+						</p>
+					</div>
+				</div>
+		</div>
+		<div class="slide" id="slide2">
+			<div class="hero">
+				<div class="heading">
+					<h1>COMPETITORS WITH A SHARED PURPOSE</h1>
+					<p>
+						Accumulus Synergy brings together 10 biopharma companies, including Pfizer, to build a data-sharing platform.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="section2">
+		<div class="hero">
+			<div class="heading">
+				<h1>THE FACTS ABOUT PFIZER AND BIONTECH’S COVID-19 VACCINE</h1>
+				<p>
+					The U.S. FDA authorization of the Pfizer-BioNTech COVID-19 vaccine for emergency use is a significant step forward in our fight against this pandemic.
+				</p>
+			</div>
+			
+		</div>
+	</div>
+
+</div>
+<footer>
+	footer
+</footer>
+
+<!-- <script type="text/javascript" src="./js/fullpage.js"></script> -->
+<script type="text/javascript" src="examples.js"></script>
+
+<script type="text/javascript">
+
+
+    // var myFullpage = new fullpage('#fullpage', {
+    //     anchors: ['firstPage', 'secondPage', '3rdPage'],
+    //     sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+    //     css3: true
+    // });
+		var fullpage = {
+			init : function(){
+				this.action();
+			},
+			action : function(){
+
+				$('#fullpage').fullpage({
+					anchors: ['firstPage', 'secondPage', '3rdPage'],
+					easingcss3: 'cubic-bezier(1.000, 0.000, 0.000, 1.000)',
+					// sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+					scrollingSpeed: 800,
+					navigation: true,
+					navigationPosition: 'right',
+					scrollBar: false,
+					autoScrolling : true,
+					responsiveWidth: 750,
+					offsetSections: true,
+					licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+				});
+
+			}
+		};
+
+fullpage.init();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <style>
+    ul {
+     list-style: none;
+     margin-left: 0;
+    }
+    ul > li {
+     display: inline-block;
+    }
+    ul > li > a {
+     color: #fff;
+     text-decoration: none;
+     display: block;
+     padding: 5px 10px;
+     background-color: #888;
+    }
+    ul > li:hover > a,
+    ul > li:focus > a,
+    ul > li:active > a,
+    ul > li.active >a {
+     color: yellow;
+     background-color: #000;
+    }
+   </style>
+   
+</head>
+<body>
+  <ul>
+    <li class="daeguBtn"><a href="#;">Btn01</a></li>
+    <li class="daeguBtn"><a href="#;">Btn02</a></li>
+    <li class="daeguBtn"><a href="#;">Btn03</a></li>
+    <li class="daeguBtn"><a href="#;">Btn04</a></li>
+    <li class="daeguBtn"><a href="#;">Btn05</a></li>
+    <li class="daeguBtn"><a href="#;">Btn06</a></li>
+   </ul>
+   <script>
+    $(function(){
+     var sBtn = $(".daeguBtn");    //  ul > li 이를 sBtn으로 칭한다. (클릭이벤트는 li에 적용 된다.)
+     sBtn.find("a").click(function(){   // sBtn에 속해 있는  a 찾아 클릭 하면.
+      sBtn.removeClass("active");     // sBtn 속에 (active) 클래스를 삭제 한다.
+      $(this).parent().addClass("active"); // 클릭한 a에 (active)클래스를 넣는다.
+     })
+    })
+   </script>
+   
+</body>
+</html>
